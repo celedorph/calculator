@@ -3,6 +3,6 @@ pool:
 #Your build pipeline references an undefined variable named 'ADOToken'. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
 steps:
 - powershell: |
-   git remote add secondary https://$(ADOToken)@dev.azure.com/tcdeveloper/test-project/_git/test-project
+   git remote add secondary https://p4lvw7lfk5suziw5f2cdunlnlwopplkabxmrat4w7jopr2c5daaq@dev.azure.com/tcdeveloper/test-project/_git/test-project
    git push secondary head:refs/heads/master --force --q
   displayName: 'Push To ADO'
